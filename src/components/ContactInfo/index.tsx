@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
+import Button from 'components/ui/Button';
 import TitleSection from 'components/ui/TitleSection';
 import { IconProps } from 'components/ui/Icon';
 
@@ -10,15 +11,10 @@ import { SectionTitle } from 'helpers/definitions';
 
 import * as Styled from './styles';
 
-interface Contact {
-  node: {
-    id: string;
-    frontmatter: {
-      title: string;
-      content: string;
-      icon: IconProps;
-    };
-  };
+interface Contact extends SectionTitle {
+  namePlaceholder: string;
+  emailPlaceholder: string;
+  submitPlaceholder: string;
 }
 
 const ConctactInfo: React.FC = () => {
@@ -45,25 +41,21 @@ const ConctactInfo: React.FC = () => {
     }
   `);
 
-  const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const contacts: Contact[] = allMarkdownRemark.edges;
+  const contact: Contact = markdownRemark.frontmatter;
 
   return (
-    <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      {contacts.map((item) => {
-        const {
-          id,
-          frontmatter: { title, icon, content }
-        } = item.node;
-
-        return (
-          <Styled.ContactInfoItem key={id}>
-            <InfoBlock icon={icon} title={title} content={content} center />
-          </Styled.ContactInfoItem>
-        );
-      })}
-    </Container>
+    <Styled.Newsletter>
+      <Container section>
+        <TitleSection title={contact.title} subtitle={contact.subtitle} center />
+        <Styled.Form>
+          <Styled.Input type="text" placeholder={contact.namePlaceholder} />
+          <Styled.Input type="email" placeholder={contact.emailPlaceholder} />
+          <Button primary block>
+            {contact.submitPlaceholder}
+          </Button>
+        </Styled.Form>
+      </Container>
+    </Styled.Newsletter>
   );
 };
 

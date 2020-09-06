@@ -1,9 +1,11 @@
 ---
 category: 'education'
-university: 'Columbia University'
-degree: 'Bachelor'
-startDate: 'Oct 2005'
-endDate: 'Jul 2008'
+university: 'Beths Grammar School'
+degree: 'A Level, GCSE'
+startDate: 'Sep 2010'
+endDate: 'Jun 2017'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+A Level - Computing (A) Maths (A) Physics (B)
+
+GCSE - 10 GCSEs (3A*, 5A, 2B) – A* in Maths, B in English Language

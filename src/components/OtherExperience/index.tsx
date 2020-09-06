@@ -8,7 +8,7 @@ import FormatHtml from 'components/utils/FormatHtml';
 
 import { SectionTitle } from 'helpers/definitions';
 
-interface Experience {
+interface OtherExperience {
   node: {
     id: string;
     html: React.ReactNode;
@@ -21,18 +21,18 @@ interface Experience {
   };
 }
 
-const Experience: React.FC = () => {
+const OtherExperience: React.FC = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "experiences section" } }) {
+      markdownRemark(frontmatter: { category: { eq: "other-experiences section" } }) {
         frontmatter {
           title
           subtitle
         }
       }
       allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "experiences" } } }
-        sort: { order: DESC, fields: fileAbsolutePath }
+        filter: { frontmatter: { category: { eq: "other-experiences" } } }
+        sort: { order: ASC, fields: fileAbsolutePath }
       ) {
         edges {
           node {
@@ -51,13 +51,13 @@ const Experience: React.FC = () => {
   `);
 
   const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const experiences: Experience[] = allMarkdownRemark.edges;
+  const otherExperiences: OtherExperience[] = allMarkdownRemark.edges;
 
   return (
     <Container section>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
 
-      {experiences.map((item) => {
+      {otherExperiences.map((item) => {
         const {
           id,
           html,
@@ -79,4 +79,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default OtherExperience;

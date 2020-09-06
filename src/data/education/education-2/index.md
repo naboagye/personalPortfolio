@@ -1,9 +1,11 @@
 ---
 category: 'education'
-university: 'Stanford University'
-degree: 'Master of Science'
-startDate: 'Oct 2008'
-endDate: 'Jul 2010'
+university: 'Loughborough University'
+degree: 'BSc Computer Science'
+startDate: 'Oct 2017'
+endDate: 'Jun 2021'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborist.
+Notable Modules: Software Engineering, Logic and Functional Programming, Object-Oriented Programming, Embedded Systems Programming.
+
+Languages used: PHP, SQL, JavaScript, Java, HTML, Haskell, C
