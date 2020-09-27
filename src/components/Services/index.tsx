@@ -5,6 +5,7 @@ import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import { IconProps } from 'components/ui/Icon';
+import LinkedInBadge from 'components/LinkedInBadge';
 
 import { SectionTitle } from 'helpers/definitions';
 

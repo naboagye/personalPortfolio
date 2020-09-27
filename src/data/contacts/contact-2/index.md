@@ -1,6 +1,6 @@
 ---
 category: 'contact'
 title: 'LinkedIn'
-icon: 'map-marker-alt'
+icon: 'linkedin'
 content: 'https://www.linkedin.com/in/naboagye/'
 ---

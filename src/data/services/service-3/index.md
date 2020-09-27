@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Copywrite'
-icon: 'edit'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+title: 'Cloud Computing'
+icon: 'cloud'
+description: 'I have used all of the Big 3 cloud providers - AWS, Microsoft Azure and Google Cloud Platform on several projects and I believe they will revolutionise our delivery of technology services'
 ---

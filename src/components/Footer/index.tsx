@@ -3,23 +3,29 @@ import React from 'react';
 import Container from 'components/ui/Container';
 
 import * as Styled from './styles';
+import { IconProps } from 'components/ui/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
+        <Styled.Link href="https://github.com/naboagye" rel="noreferrer noopener" target="_blank">
+          <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           GitHub
         </Styled.Link>
+        <Styled.Link href="https://www.linkedin.com/in/naboagye/" rel="noreferrer noopener" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+          LinkedIn
+        </Styled.Link>
         <Styled.Link
-          href="https://github.com/SaimirKapaj/gatsby-markdown-typescript-personal-website"
+          href="https://stackoverflow.com/users/13501266/nana-aboagye?tab=profile"
           rel="noreferrer noopener"
           target="_blank"
         >
-          Twitter
-        </Styled.Link>
-        <Styled.Link href="/" rel="noreferrer noopener" target="_blank">
-          Behance
+          <FontAwesomeIcon icon={faStackOverflow}></FontAwesomeIcon>
+          Stack Overflow
         </Styled.Link>
       </Styled.Links>
     </Container>

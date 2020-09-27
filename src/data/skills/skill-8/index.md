@@ -1,5 +1,5 @@
 ---
 category: 'skills'
-title: 'Illustrator'
+title: 'AWS'
 percentage: 41
 ---

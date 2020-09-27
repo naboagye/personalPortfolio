@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Web Design'
+title: 'Web Development'
 icon: 'laptop-code'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+description: 'I enjoy creating PWAs (Progressive Web Applications) using the MERN stack but also using a python Flask backend ocassionally'
 ---

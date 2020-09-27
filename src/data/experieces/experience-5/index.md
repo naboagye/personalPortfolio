@@ -3,7 +3,7 @@ category: 'experiences'
 company: 'Nomura'
 position: 'Technology Industrial Placement Intern'
 startDate: 'Jun 2019'
-endDate: 'Present'
+endDate: 'Sep 2020'
 ---
 
 Use of Python based RPA (Robotic Process Automation) tools, to perform GUI checks and file reconciliation
