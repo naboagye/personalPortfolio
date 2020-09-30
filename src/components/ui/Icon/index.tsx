@@ -14,7 +14,8 @@ import {
   faInfinity,
   faChartBar,
   faPeopleArrows,
-  faBasketballBall
+  faBasketballBall,
+  faDownload
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
@@ -34,7 +35,8 @@ library.add(
   faChartBar,
   faPeopleArrows,
   faLinkedin,
-  faBasketballBall
+  faBasketballBall,
+  faDownload
 );
 
 export type IconProps = FontAwesomeIconProps['icon'];

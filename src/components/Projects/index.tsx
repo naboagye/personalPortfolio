@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
           } = item.node;
 
           return (
-            <Styled.Projects key={id}>
+            <Styled.Project key={id}>
               <Link to={slug}>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                   <Styled.Card>
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
                   </Styled.Card>
                 </motion.div>
               </Link>
-            </Styled.Projects>
+            </Styled.Project>
           );
         })}
       </Styled.Projects>
