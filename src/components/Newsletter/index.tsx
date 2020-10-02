@@ -35,10 +35,10 @@ const Newsletter: React.FC = () => {
     <Styled.Newsletter>
       <Container section>
         <TitleSection title={newsletter.title} subtitle={newsletter.subtitle} center />
-        <Styled.Form>
-          <Styled.Input type="text" placeholder={newsletter.namePlaceholder} />
-          <Styled.Input type="email" placeholder={newsletter.emailPlaceholder} />
-          <Button primary block>
+        <Styled.Form method="POST" action="https://formspree.io/naboagye13@gmail.com" target="_blank">
+          <Styled.Input type="email" size="50" placeholder={newsletter.emailPlaceholder} />
+          <Styled.TextArea placeholder={newsletter.namePlaceholder} required />
+          <Button type="submit" primary block>
             {newsletter.submitPlaceholder}
           </Button>
         </Styled.Form>

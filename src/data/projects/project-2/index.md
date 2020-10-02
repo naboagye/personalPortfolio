@@ -1,25 +1,28 @@
 ---
 category: 'projects'
-cover: './cover.jpg'
-title: 'Blog Post 2'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+cover: './Splash.png'
+title: 'Trippa'
+description: 'The travel app that fits into your business seamlessly'
 date: '2019-12-24'
-tags: ['JavaScript', 'React']
+tags: ['Python', 'Flask', 'React Native', 'Figma']
 published: true
 ---
 
-_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat._.
+_The Hackathon that kicked off my Hackathon career._.
 
-**Sed ut perspiciatis unde omnis**
+**Trippa - The Travel Business app**
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+The idea was relatively simple. An app that unifies all the current processes that are needed when employees go on business trips from finding the flight and hotel to the managing expenses and trip budgets.
 
-![Aliquet vel mollis nec](./cover.jpg)
+Instead of having several systems to do all these things we wanted to bring them all into one place and streamline the process with features such as a receipt scanner which can automatically add and calculate expenses and a flight booker which scans the web for flights preffered by the company.
+![Aliquet vel mollis nec](./collage1.png)
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+This project was a product of the BeMyApp Hacakthon which actually was the first Hackathon I attended and I came alone so had to form a team with people I've never worked with.
 
-**Sliquam quaerat voluptatems**
+**Piecing it togetehr**
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+As we only had 24 hours we had to move quickly and be efficient. For the UI/UX we used the now very popular Figma and we chose this as it's very easy to collaborate with it since it's an online tool and it has a lot of nice designs and templates we could make use of to bring our idea to life faster.
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+For the backend we made use of Python and Flask to create our own custom API using various APIs provided to us by Amadeus and Here Maps.
+
+The frontend was planned to be done using React Native but this proved difficult as the handoff from the designers to the developer (me!) was challenging as we couldn't convert the the Figma designs into usable stylesheets to be used for the front end. Being limited by time we just focussed on the API and algorthims we created and instead utilised Figmas mock app functionality to show our vision.

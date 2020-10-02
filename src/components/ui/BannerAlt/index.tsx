@@ -26,12 +26,6 @@ const BannerAlt: React.FC<Props> = ({ title, subtitle, content, linkTo, linkText
       <Container section>
         <TitleSection title={title} subtitle={subtitle} />
         <Styled.Content>{content}</Styled.Content>
-        <React.Fragment>
-          <Button primary onClick={toggle}>
-            {linkText}
-          </Button>
-          <Modal headerText={'s'} isShown={isShown} hide={toggle} modalContent={content2} />
-        </React.Fragment>
       </Container>
     </Styled.Banner>
   );

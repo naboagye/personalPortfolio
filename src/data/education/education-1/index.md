@@ -8,4 +8,4 @@ endDate: 'Jun 2017'
 
 A Level - Computing (A) Maths (A) Physics (B)
 
-GCSE - 10 GCSEs (3A*, 5A, 2B) – A* in Maths, B in English Language
+GCSE - 10 GCSEs (3A\*, 5A, 2B) – A\* in Maths, B in English Language

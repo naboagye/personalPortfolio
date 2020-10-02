@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { fab, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import {
   faLaptopCode,
   faDrawPolygon,
@@ -36,7 +36,9 @@ library.add(
   faPeopleArrows,
   faLinkedin,
   faBasketballBall,
-  faDownload
+  faDownload,
+  faLinkedin,
+  faLinkedinIn
 );
 
 export type IconProps = FontAwesomeIconProps['icon'];
