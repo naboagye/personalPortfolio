@@ -8,6 +8,9 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+
 import * as Styled from './styles';
 
 interface Post {
@@ -18,6 +21,7 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
+    repo: string;
   };
 }
 
@@ -41,6 +45,12 @@ const ProjectPost: React.FC<Props> = ({ data, pageContext }) => {
       <SEO title={post.frontmatter.title} />
       <Container section>
         <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
+        <Styled.Link href={post.frontmatter.repo} rel="noreferrer noopener" target="_blank">
+          <Styled.Repo>
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            View Source Code
+          </Styled.Repo>
+        </Styled.Link>
         <FormatHtml content={post.html} />
         <Styled.Links>
           <span>
@@ -72,6 +82,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMM DD, YYYY")
+        repo
       }
     }
   }

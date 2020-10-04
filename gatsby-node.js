@@ -25,10 +25,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.tsx`);
+  const projectPostTemplate = path.resolve(`src/templates/ProjectPost/index.tsx`);
 
   const res = await graphql(`
     query {
-      allMarkdownRemark(
+      blogs: allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "blog" } } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
@@ -43,34 +44,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    }
-  `);
-
-  const posts = res.data.allMarkdownRemark.edges;
-
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
-
-    createPage({
-      path: `${post.node.fields.slug}`,
-      component: blogPostTemplate,
-      context: {
-        slug: `${post.node.fields.slug}`,
-        previous,
-        next
-      }
-    });
-  });
-};
-
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-  const projectPostTemplate = path.resolve(`src/templates/ProjectPost/index.tsx`);
-
-  const res = await graphql(`
-    query {
-      allMarkdownRemark(
+      projects: allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "projects" } } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
@@ -88,17 +62,33 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const posts = res.data.allMarkdownRemark.edges;
+  const blogs = res.data.blogs.edges;
+  const projects = res.data.projects.edges;
 
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+  blogs.forEach((blog, index) => {
+    const previous = index === blogs.length - 1 ? null : blogs[index + 1].node;
+    const next = index === 0 ? null : blogs[index - 1].node;
 
     createPage({
-      path: `${post.node.fields.slug}`,
+      path: `${blog.node.fields.slug}`,
+      component: blogPostTemplate,
+      context: {
+        slug: `${blog.node.fields.slug}`,
+        previous,
+        next
+      }
+    });
+  });
+
+  projects.forEach((project, index) => {
+    const previous = index === projects.length - 1 ? null : projects[index + 1].node;
+    const next = index === 0 ? null : projects[index - 1].node;
+
+    createPage({
+      path: `${project.node.fields.slug}`,
       component: projectPostTemplate,
       context: {
-        slug: `${post.node.fields.slug}`,
+        slug: `${project.node.fields.slug}`,
         previous,
         next
       }

@@ -6,7 +6,7 @@ export const Projects = styled.div`
 `;
 
 export const Project = styled.div`
-  ${tw`w-full sm:w-1/2 p-3`};
+  ${tw`w-full flex sm:w-1/2 p-3`};
 `;
 
 export const Card = styled.div`
@@ -23,6 +23,10 @@ export const Image = styled.figure`
 
 export const Title = styled.h3`
   ${tw`font-semibold mb-4`};
+`;
+
+export const FlexDiv = styled.div`
+  ${tw`flex-grow`};
 `;
 
 export const Description = styled.p``;

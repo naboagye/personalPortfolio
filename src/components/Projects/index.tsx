@@ -21,6 +21,7 @@ interface Project {
       title: string;
       description: string;
       date: string;
+      repo: string;
       tags: string[];
       cover: {
         childImageSharp: {
@@ -55,6 +56,7 @@ const Projects: React.FC = () => {
               title
               description
               date(formatString: "MMM DD, YYYY")
+              repo
               tags
               cover {
                 childImageSharp {

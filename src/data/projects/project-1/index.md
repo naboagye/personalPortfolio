@@ -4,6 +4,7 @@ cover: './aclogo.png'
 title: 'Oxford Hack 2019 – AutoDev Project'
 description: 'A desktop application that automatically configures your preferred dev environment'
 date: '2019-11-13'
+repo: 'https://github.com/kbnyakundi/Autoconfig'
 tags: ['Automation', 'Ansible', 'Python', 'GCP']
 published: true
 ---

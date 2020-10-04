@@ -1,6 +1,6 @@
 ---
 category: 'testimonials'
-cover: './testimonial-1.jpg'
+cover: './stock.png'
 title: 'Mohamed Ahmed'
 ---
 
