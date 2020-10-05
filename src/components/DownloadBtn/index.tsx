@@ -37,7 +37,8 @@ const theme = createMuiTheme({
 const style = {
   bottom: 110,
   right: 20,
-  position: 'fixed'
+  position: 'fixed',
+  color: '#3c366b'
 };
 
 const DownloadBtn: React.FC = () => {

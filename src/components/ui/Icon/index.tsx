@@ -15,7 +15,8 @@ import {
   faChartBar,
   faPeopleArrows,
   faBasketballBall,
-  faDownload
+  faDownload,
+  faUserGraduate
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
@@ -38,7 +39,8 @@ library.add(
   faBasketballBall,
   faDownload,
   faLinkedin,
-  faLinkedinIn
+  faLinkedinIn,
+  faUserGraduate
 );
 
 export type IconProps = FontAwesomeIconProps['icon'];

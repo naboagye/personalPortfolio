@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Web Development'
-icon: 'laptop-code'
-description: 'I enjoy creating PWAs (Progressive Web Applications) using the MERN stack but also using a python Flask backend ocassionally'
+title: 'Student'
+icon: 'user-graduate'
+description: "I'm currently a final year undergraduate student at Lougborough University (UK) studying BSc Computer Science graduating in 2021!"
 ---
