@@ -20,4 +20,4 @@ This blog will help you if you're also thinking of doing an internship or placem
 
 **Who am I**
 
-My name is Nana and I'm an aspiring DevOps Engineer and also a final year student at Loughborough Univeristy studying BSc Computer Science.
+My name is Nana and I'm an aspiring DevOps Engineer and also a final year student at Loughborough University studying BSc Computer Science.
