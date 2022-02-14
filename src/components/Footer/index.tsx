@@ -11,7 +11,7 @@ const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
       <Styled.Links>
-        <Styled.Content>Copyright © 2020 NANA ABOAGYE</Styled.Content>
+        <Styled.Content>Copyright © 2022 NANA ABOAGYE</Styled.Content>
         <Styled.Link href="https://github.com/naboagye" rel="noreferrer noopener" target="_blank">
           <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           GitHub

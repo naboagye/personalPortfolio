@@ -6,6 +6,8 @@ startDate: 'Oct 2017'
 endDate: 'Jun 2021'
 ---
 
-Notable Modules: Software Engineering, Logic and Functional Programming, Object-Oriented Programming, Embedded Systems Programming.
+Final grade: 1st Class Honours (74% overall)
 
-Languages used: PHP, SQL, JavaScript, Java, HTML, Haskell, C
+Notable Modules: Cyber Security, Cloud Computing, Data Mining, Advanced Networking
+
+Languages used: Python, SQL, JavaScript, Java, HTML, C

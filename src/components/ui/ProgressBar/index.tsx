@@ -9,11 +9,10 @@ interface Props extends Styled.StyledProps {
 const ProgressBar: React.FC<Props> = ({ title, percentage }) => (
   <Styled.ProgressBar>
     <Styled.Content>
-      <Styled.Title>{title}</Styled.Title>
-      <Styled.Percentage>{percentage}%</Styled.Percentage>
+      <Styled.Title>{title}</Styled.Title>{' '}
     </Styled.Content>
     <Styled.BarWrapper>
-      <Styled.Bar percentage={percentage} />
+      <Styled.Bar percentage={100} />
     </Styled.BarWrapper>
   </Styled.ProgressBar>
 );

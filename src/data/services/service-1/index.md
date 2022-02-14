@@ -1,6 +1,6 @@
 ---
 category: 'services'
-title: 'Student'
-icon: 'user-graduate'
-description: "I'm currently a final year undergraduate student at Loughborough University (UK) studying BSc Computer Science graduating in 2021"
+title: 'Data Science'
+icon: 'database'
+description: 'I enjoy working with large datasets, cleaning the data and applying models to aid with knowledge discovery using Weka and Python (Pandas, Jupyter etc).'
 ---
